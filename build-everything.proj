@@ -47,10 +47,6 @@
     <SetupProjects Include="setup/fsharp-setup-build.proj" />
   </ItemGroup>
 
-  <ItemGroup Condition="'$(BUILD_NUGET)'=='1'">
-    <NugetProjects Include="src/fsharp/FSharp.Core.nuget/FSharp.Core.nuget.proj" />
-  </ItemGroup>
-
   <!-- +++++++++++++++++++++++ Project selection for testing +++++++++++++++++++++++++++++++ -->
 
   <ItemGroup Condition="'$(TEST_NET40_COREUNIT_SUITE)'=='1'" >
